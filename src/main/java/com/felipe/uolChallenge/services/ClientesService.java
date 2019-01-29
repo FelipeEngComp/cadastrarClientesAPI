@@ -66,6 +66,11 @@ public class ClientesService {
 		clientesRepository.deleteById(clienteId);;
 	}
 	
+	public void deletarCadastrante(Long clienteId) {
+		Cliente cliente = buscar(clienteId);
+		cadastranteRepository.deleteById(cliente.getDadosDoCadastrante().getId());
+	}
+	
 	public void atualizar(Cliente cliente) {
 		verificaExistencia(cliente.getId());
 		salvar(cliente);
@@ -74,6 +79,7 @@ public class ClientesService {
 	private void verificaExistencia(Long clienteId) {
 		buscar(clienteId);
 	}
+
 	
 	
 }

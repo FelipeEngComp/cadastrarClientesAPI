@@ -31,7 +31,7 @@ public class DadosDoCadastrante {
 	private Long max_temp;
 	
 	@OneToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "LIVRO_ID")
+	@JoinColumn(name = "CLIENTE_ID")
 	@JsonIgnore
 	private Cliente cliente;
 

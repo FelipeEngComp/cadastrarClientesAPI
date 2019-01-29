@@ -7,7 +7,6 @@ import java.net.URL;
 import java.util.Calendar;
 import java.util.List;
 
-import org.junit.Test;
 
 import com.felipe.uolChallenge.client.LocationByCoordinates;
 import com.felipe.uolChallenge.client.LocationByIpCliente;
@@ -19,7 +18,6 @@ import com.felipe.uolChallenge.domain.IpVigilante;
 
 
 public class Aplicacao {
-	@Test
 	public DadosDoCadastrante getInformacoesDoCadastrante() throws IOException  {
 		URL whatismyip = new URL("http://checkip.amazonaws.com");
 		BufferedReader in = null;
