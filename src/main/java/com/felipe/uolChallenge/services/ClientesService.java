@@ -14,12 +14,6 @@ import com.felipe.uolChallenge.exceptions.ClienteNaoEncontradoException;
 import com.felipe.uolChallenge.repository.ClientesRepository;
 import com.felipe.uolChallenge.repository.DadosDoCadastranteRepository;
 
-/*
- *author Felipe Ribeiro Rosa Alves
- * 
- * 
- * */
-
 
 @Service
 public class ClientesService {
@@ -49,14 +43,15 @@ public class ClientesService {
 	
 	public DadosDoCadastrante salvarCadastrante(Cliente cliente) {
 		Aplicacao aplicacao = new Aplicacao();
-		DadosDoCadastrante dadosDoCadastrante = null;
+		DadosDoCadastrante dadosDoCadastrante = null;	
 		try {
 			dadosDoCadastrante = aplicacao.getInformacoesDoCadastrante();
-			dadosDoCadastrante.setCliente(cliente);
-			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+			
+		dadosDoCadastrante.setCliente(cliente);
+		
 		return cadastranteRepository.save(dadosDoCadastrante);
 		
 	}
