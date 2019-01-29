@@ -9,6 +9,5 @@ public class CadastroclienteuolApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CadastroclienteuolApplication.class, args);
 	}
-
 }
 
