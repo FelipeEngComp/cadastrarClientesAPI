@@ -1,6 +1,5 @@
 package com.felipe.uolChallenge.resources;
 
-import java.io.IOException;
 import java.net.URI;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -18,7 +17,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.felipe.uolChallenge.application.Aplicacao;
 import com.felipe.uolChallenge.domain.Cliente;
 import com.felipe.uolChallenge.domain.DadosDoCadastrante;
 import com.felipe.uolChallenge.services.ClientesService;

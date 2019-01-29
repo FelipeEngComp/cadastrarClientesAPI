@@ -1,8 +1,6 @@
 package com.felipe.uolChallenge.client;
 
 import java.net.URI;
-import java.util.Arrays;
-import java.util.List;
 
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
